@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- TODO: answer here -->
+    <div class="header">
+      <h1>Student Portal</h1>
+      <h2>Admin</h2>
+    </div>
+    <form id="form-student">
+      <label for="input-name">Fullname</label>
+      <input type="text" id="input-name" required />
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="input-date">Birth Date</label>
+          <input type="date" id="input-date" required />
+        </div>
+        <div class="form-group">
+          <label for="input-gender">Gender</label>
+          <select id="input-gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+      </div>
+      <br />
+      <br />
+
+      <label for="input-prody">Program Study</label>
+      <select id="input-prody" required>
+        <option value="Ekonomi">Ekonomi</option>
+        <option value="Manajemen">Manajemen</option>
+        <option value="Akuntansi">Akuntansi</option>
+        <option value="Administrasi Publik">Administrasi Publik</option>
+        <option value="Administrasi Bisnis">Administrasi Bisnis</option>
+        <option value="Hubungan Internasional">Hubungan Internasional</option>
+        <option value="Teknik Sipil">Teknik Sipil</option>
+        <option value="Arsitektur">Arsitektur</option>
+        <option value="Matematika">Matematika</option>
+        <option value="Fisika">Fisika</option>
+        <option value="Informatika">Informatika</option>
+      </select>
+      <br />
+      <br />
+
+      <input type="submit" id="add-btn" value="Add student" />
+    </form>
+
+    <h2>Registered Students</h2>
+    <table id="table-student">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Full Name</th>
+          <th>Birth Date</th>
+          <th>Gender</th>
+          <th>Student ID</th>
+          <th>Faculty</th>
+          <th>Program Study</th>
+          <th>Option</th>
+        </tr>
+      </thead>
+      <tbody id="student-data">
+        <tr>
+          <td>1</td>
+          <td>Ahmad Fauzidan Yahya Khainur</td>
+          <td>2004-10-12</td>
+          <td>Male</td>
+          <td>2210631170054</td>
+          <td>Faculty of Computer Science</td>
+          <td>Informatika</td>
+          <td><button type="button" class="delete-btn">Delete</button></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ahmad Zacky Taufiqul Hakim</td>
+          <td>2004-02-18</td>
+          <td>Male</td>
+          <td>2210631170055</td>
+          <td>Faculty of Computer Science</td>
+          <td>Informatika</td>
+          <td><button type="button" class="delete-btn">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
